@@ -162,9 +162,10 @@ body{
     margin: 3px 0px;
 }
 
-/* 
+
 .login {
-    background: linear-gradient(#21C08B, #ab88ff);
+    margin: 50px ;
+    background: #141414;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,7 +242,7 @@ body{
     padding: 0px 20px;
     outline: none;
     height: 50px;
-} */
+}
 
 .input {
     background-color: rgba(255 , 255, 255, 0.1);
@@ -304,3 +305,36 @@ body{
         flex-direction: column;
     }
 }
+.error {
+    color: white;
+    display: flex;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.error__h2 {
+    margin: 20px;
+    font-size: 100px;
+    text-transform: uppercase;
+   
+}
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+  }
+  .bounce {
+    animation-name: bounce;
+  }
